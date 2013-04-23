@@ -1,0 +1,21 @@
+<?xml version="1.0"?> 
+<project name="Ebis" default="all" basedir="."> 
+  <property name="dir.src" value="src"/>
+
+  <property name="dir.build" value="classes" /> 
+
+  <target name="all" depends="init,compile"/>
+
+  <target name="init">
+    <mkdir dir="${dir.build}" />
+  </target>
+
+  <target name="compile"> 
+    <javac srcdir="${dir.src}" destdir="${dir.build}" /> 
+  </target> 
+
+  <target name="clean">
+    <delete dir="${dir.build}" />
+  </target>
+
+</project>

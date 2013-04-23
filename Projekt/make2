@@ -1,0 +1,5 @@
+xyz: oberflaeche/Main.class
+	java -cp classes oberflaeche/Main
+oberflaeche/Main.class: oberflaeche/Main.java
+	javac -d classes oberflaeche/Main.java
+
